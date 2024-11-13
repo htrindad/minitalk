@@ -28,6 +28,4 @@ typedef struct s_data
 	size_t	len;
 }	t_data;
 
-void	handle_data(t_data *data, int pid);
-
 #endif
