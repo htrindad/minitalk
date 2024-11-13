@@ -77,10 +77,7 @@ int	main(int ac, char **av)
 	}
 	g_data.pid = ps_atoi(av[1]);
 	if (g_data.pid < 1)
-	{
-		ft_printf("Illegal pid.\n");
-		return (-1);
-	}
+		return (illegal());
 	g_data.s = av[2];
 	g_data.cc = 0;
 	g_data.len = ps_strlen(av[2]);
